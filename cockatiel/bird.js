@@ -26,7 +26,7 @@ var colors = {
 let illo = new Zdog.Illustration({
   element: elem,
   zoom: 1,
-  dragRotate: true,
+  dragRotate: false,
 });
 console.log(miceConf.config.numBalls);
 
