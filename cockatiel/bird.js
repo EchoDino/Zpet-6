@@ -100,7 +100,7 @@ function updateAnimation(ii) {
 if (!isStopped[ii]){                      
 currentFrame[ii] += 1;
 }
-if (currentFrame[ii] >= miceConf.ballz[ii].length) currentFrame[ii]=0;
+if (currentFrame[ii] >= miceConf.ballz[anim[ii]].length) currentFrame[ii]=0;
 //console.log(currentFrame[ii]);
 }
 function direction(dir,speed){
