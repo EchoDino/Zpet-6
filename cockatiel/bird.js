@@ -50,7 +50,7 @@ for(var rr = 0; rr < miceConf.config.numBalls; rr++){
 pet[ii][rr] = new Zdog.Shape({
   addTo: pet[ii],
   //stroke: 15,
-  translate: { x: miceConf.ballz[anim[ii]][currentFrame][rr][1],y:miceConf.ballz[anim[ii]][currentFrame][rr][2],z:miceConf.ballz[anim[ii]][currentFrame][rr][3] },
+  translate: { x: miceConf.ballz[anim[ii]][currentFrame[ii]][rr][1],y:miceConf.ballz[anim[ii]][currentFrame[ii]][rr][2],z:miceConf.ballz[anim[ii]][currentFrame[ii]][rr][3] },
   color: 'red',
   //dragRotate: true,
 });
