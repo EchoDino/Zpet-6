@@ -32,7 +32,7 @@ console.log(miceConf.config.numBalls);
 
 // ------------------------------------------------------ model ------------------------------------------------ //
 for(var ii = 0; ii < totalPetz; ii++){
-anim[ii]=0;
+anim[ii]=Math.floor(Math.random() * 2);
 petDirection[ii] = Math.floor(Math.random() * 8);
 isStopped[ii] = Math.floor(Math.random() * 2);
 console.log(isStopped[ii]);
@@ -191,6 +191,7 @@ for(var ii = 0; ii < totalPetz; ii++){
 
 petDirection[ii] = Math.floor(Math.random() * 8);
 isStopped[ii] = Math.floor(Math.random() * 2);
+anim[ii]=Math.floor(Math.random() * 2);
 console.log(isStopped[ii])
 }
 
