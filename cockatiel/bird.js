@@ -165,7 +165,7 @@ pet[ii].translate.y += !isStopped[ii] ? angleToDir[petDirection[ii]].y : 0;
 //pet[ii].translate.z
 pet[ii].rotate.y = petDirection[ii] * petAngle;
 for(var rr = 0; rr < miceConf.config.numBalls; rr++){
-  console.log(currentFrame[ii]);
+  //console.log(currentFrame[ii]);
 pet[ii][rr].translate.x = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][1];
 pet[ii][rr].translate.y = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][2];
 pet[ii][rr].translate.z = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][3];
@@ -190,7 +190,7 @@ setInterval(function(){
 //---------------------------------------------------------------------------//
 
 for(var ii = 0; ii < totalPetz; ii++){
-
+currentFrame[ii] = 0; //start from first frame, some of Zpet frames are more/less than other animation.
 petDirection[ii] = Math.floor(Math.random() * 8);
 isStopped[ii] = Math.floor(Math.random() * 2);
 anim[ii]=Math.floor(Math.random() * 2);
