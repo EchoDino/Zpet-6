@@ -167,8 +167,8 @@ for(var rr = 0; rr < miceConf.config.numBalls; rr++){
 pet[ii][rr].translate.x = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][1];
 pet[ii][rr].translate.y = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][2];
 pet[ii][rr].translate.z = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][3];
-pet[ii][rr].color = miceConf.ballz[anim[ii]][currentFrame][rr][0];
-pet[ii][rr].stroke = miceConf.ballz[anim[ii]][currentFrame][rr][4];
+pet[ii][rr].color = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][0];
+pet[ii][rr].stroke = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][4];
 //console.log( miceConf.ballz[currentFrame][rr][2]);
 //console.log( currentFrame);
 //pet[ii][rr].translate.x = miceConf.ballz[currentFrame][rr][1];
