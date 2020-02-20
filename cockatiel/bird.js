@@ -8,6 +8,7 @@ var pet = [];
 var anim = [];
 var petDirection =[];
 var totalPetz =2;
+var mood = [];
 var petX = [[0,0,0],[0,0,0],[0,0,0]];
 var petAngle = 0.78125;
 var isStopped = [];
@@ -161,9 +162,10 @@ for(var ii = 0; ii < totalPetz; ii++){
 //console.log(petDirection[ii]);
 pet[ii].translate.x += !isStopped[ii] ? angleToDir[petDirection[ii]].x : 0;
 pet[ii].translate.y += !isStopped[ii] ? angleToDir[petDirection[ii]].y : 0;
-pet[ii].translate.z += petX[ii][2];
+//pet[ii].translate.z
 pet[ii].rotate.y = petDirection[ii] * petAngle;
 for(var rr = 0; rr < miceConf.config.numBalls; rr++){
+  console.log(currentFrame[ii]);
 pet[ii][rr].translate.x = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][1];
 pet[ii][rr].translate.y = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][2];
 pet[ii][rr].translate.z = miceConf.ballz[anim[ii]][currentFrame[ii]][rr][3];
